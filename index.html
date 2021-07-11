@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><script src='https://cdn.plot.ly/plotly-latest.min.js'></script></head>
+<body><div id='plotContainer' style='width: 100%; height: 100%;'></div>
+<script>
+data   = [{"x":["A","B","C","D","E"],"y":[0.0,9.0,0.0,8.0],"yaxis":"y1","type":"scatter"},{"x":["A","B","C","D","E"],"y":[1.0,2.0,0.0,0.75,1.0],"yaxis":"y2","type":"scatter"}];
+layout = {"title":{"text":"Annotated Heatmap"},"xaxis":{"ticks":"","side":"right"},"yaxis1":{"overlaying":"","domain":[0.0,0.5]},"yaxis2":{"overlaying":"y2","domain":[0.5,1.0]},"width":700,"height":700,"autosize":false};
+config = {};
+Plotly.newPlot('plotContainer', data, layout, config);
+</script>
+</body></html>
